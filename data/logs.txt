@@ -7,3 +7,27 @@
 [ERROR] 2026-05-01 23:23:40.738889 - Error esperado en reserva inválida - Datos inconsistentes en la reserva
 [ERROR] 2026-05-01 23:23:40.740705 - Error inesperado capturado - division by zero
 [INFO] 2026-05-01 23:23:40.753028 - Sistema finalizado
+2026-05-10 16:54:12,833 - INFO - Sistema iniciado correctamente.
+2026-05-10 16:54:12,834 - INFO - Cliente registrado | ID: CLI001 | Nombre: Carlos Ramirez
+2026-05-10 16:54:12,835 - INFO - Cliente registrado correctamente.
+2026-05-10 16:54:12,835 - ERROR - El ID no puede estar vacío.
+2026-05-10 16:54:12,835 - INFO - Servicio sala registrado.
+2026-05-10 16:54:12,836 - INFO - Servicio equipo registrado.
+2026-05-10 16:54:12,836 - INFO - Servicio asesoría registrado.
+2026-05-10 16:54:12,836 - ERROR - El nombre del servicio no puede estar vacío.
+2026-05-10 16:54:12,837 - INFO - Reserva creada correctamente | ID: RES-1
+2026-05-10 16:54:12,837 - INFO - Reserva confirmada | ID: RES-1
+2026-05-10 16:54:12,837 - INFO - Proceso de confirmación ejecutado.
+2026-05-10 16:54:12,837 - INFO - Reserva válida procesada.
+2026-05-10 16:54:12,838 - INFO - Reserva creada correctamente | ID: RES-2
+2026-05-10 16:54:12,838 - INFO - Reserva confirmada | ID: RES-2
+2026-05-10 16:54:12,838 - INFO - Proceso de confirmación ejecutado.
+2026-05-10 16:54:12,839 - INFO - Reserva con descuento procesada.
+2026-05-10 16:54:12,839 - ERROR - Error al crear reserva: El objeto cliente no es válido.
+2026-05-10 16:54:12,840 - ERROR - No fue posible crear la reserva.
+2026-05-10 16:54:12,840 - INFO - Reserva finalizada | ID: RES-1
+2026-05-10 16:54:12,840 - INFO - Proceso de finalización ejecutado.
+2026-05-10 16:54:12,840 - INFO - Reserva finalizada.
+2026-05-10 16:54:12,841 - INFO - Operación matemática exitosa.
+2026-05-10 16:54:12,842 - INFO - Bloque finally ejecutado.
+2026-05-10 16:54:12,844 - INFO - Sistema finalizado correctamente.
