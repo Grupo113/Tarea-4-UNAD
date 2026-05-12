@@ -31,3 +31,30 @@
 2026-05-10 16:54:12,841 - INFO - Operación matemática exitosa.
 2026-05-10 16:54:12,842 - INFO - Bloque finally ejecutado.
 2026-05-10 16:54:12,844 - INFO - Sistema finalizado correctamente.
+2026-05-11 20:02:04,607 - INFO - Sistema iniciado correctamente.
+2026-05-11 20:02:04,609 - INFO - Cliente registrado | ID: CLI001 | Nombre: Carlos Ramirez
+2026-05-11 20:02:04,610 - INFO - Cliente válido registrado.
+2026-05-11 20:02:04,610 - ERROR - El ID no puede estar vacío.
+2026-05-11 20:02:04,611 - INFO - Servicio sala registrado.
+2026-05-11 20:02:04,611 - INFO - Servicio equipo registrado.
+2026-05-11 20:02:04,612 - INFO - Servicio asesoría registrada.
+2026-05-11 20:02:04,612 - ERROR - El nombre del servicio no puede estar vacío.
+2026-05-11 20:02:04,613 - INFO - Reserva creada correctamente | ID: RES-1
+2026-05-11 20:02:04,613 - INFO - Reserva confirmada | ID: RES-1
+2026-05-11 20:02:04,614 - INFO - Proceso de confirmación ejecutado.
+2026-05-11 20:02:04,615 - INFO - Reserva válida procesada.
+2026-05-11 20:02:04,616 - INFO - Reserva creada correctamente | ID: RES-2
+2026-05-11 20:02:04,617 - INFO - Reserva confirmada | ID: RES-2
+2026-05-11 20:02:04,617 - INFO - Proceso de confirmación ejecutado.
+2026-05-11 20:02:04,618 - INFO - Reserva con descuento procesada.
+2026-05-11 20:02:04,619 - ERROR - Error al crear reserva: El objeto cliente no es válido.
+2026-05-11 20:02:04,619 - ERROR - No fue posible crear la reserva.
+2026-05-11 20:02:04,620 - INFO - Reserva finalizada | ID: RES-1
+2026-05-11 20:02:04,620 - INFO - Proceso de finalización ejecutado.
+2026-05-11 20:02:04,621 - INFO - Reserva finalizada.
+2026-05-11 20:02:04,624 - INFO - Reserva cancelada | ID: RES-2
+2026-05-11 20:02:04,624 - INFO - Proceso de cancelación ejecutado.
+2026-05-11 20:02:04,627 - INFO - Reserva cancelada.
+2026-05-11 20:02:04,628 - INFO - Operación matemática ejecutada.
+2026-05-11 20:02:04,629 - INFO - Bloque finally ejecutado.
+2026-05-11 20:02:04,630 - INFO - Sistema finalizado correctamente.

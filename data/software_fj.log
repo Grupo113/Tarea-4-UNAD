@@ -40,3 +40,45 @@
 2026-05-10 16:54:31 | INFO     | ───────────────────────────────────────────────────────
 2026-05-10 16:54:31 | ERROR    | Error al crear reserva: El objeto cliente no es válido.
 2026-05-10 16:54:31 | WARNING  | Reserva inválida detectada: No fue posible crear la reserva.
+2026-05-11 20:02:30 | INFO     | ───────────────────────────────────────────────────────
+2026-05-11 20:02:30 | INFO     | CASO 1 — Registro válido de cliente
+2026-05-11 20:02:30 | INFO     | ───────────────────────────────────────────────────────
+2026-05-11 20:02:30 | INFO     | Cliente registrado | ID: CLI001 | Nombre: Fernanda Jiménez López
+2026-05-11 20:02:30 | INFO     | Email actualizado | ID: CLI001
+2026-05-11 20:02:30 | INFO     | Teléfono actualizado | ID: CLI001
+2026-05-11 20:02:30 | INFO     | CASO 1 EXITOSO — Cliente(id_cliente='CLI001', nombre='Fernanda Jiménez López', email='fernanda.nueva@softwarefj.com', telefono='3109876543')
+2026-05-11 20:02:30 | INFO     | CASO 1 — Finalizado.
+2026-05-11 20:02:30 | INFO     | ───────────────────────────────────────────────────────
+2026-05-11 20:02:30 | INFO     | CASO 2 — Intentos inválidos de registro
+2026-05-11 20:02:30 | INFO     | ───────────────────────────────────────────────────────
+2026-05-11 20:02:30 | WARNING  | CASO 2a — Nombre con números — Nombre 'Juan123 Pérez' contiene caracteres inválidos. Solo letras y espacios.
+2026-05-11 20:02:30 | DEBUG    | Subcaso procesado: 2a — Nombre con números
+2026-05-11 20:02:30 | WARNING  | CASO 2b — Email sin @ — Correo 'ana.softwarefj.com' no tiene formato válido.
+2026-05-11 20:02:30 | DEBUG    | Subcaso procesado: 2b — Email sin @
+2026-05-11 20:02:30 | WARNING  | CASO 2c — Teléfono inválido — Teléfono 'ABC123' inválido. Use 7-15 dígitos, puede iniciar con '+'.
+2026-05-11 20:02:30 | DEBUG    | Subcaso procesado: 2c — Teléfono inválido
+2026-05-11 20:02:30 | WARNING  | CASO 2d — ID duplicado — El ID 'CLI001' ya está registrado.
+2026-05-11 20:02:30 | DEBUG    | Subcaso procesado: 2d — ID duplicado
+2026-05-11 20:02:30 | INFO     | ───────────────────────────────────────────────────────
+2026-05-11 20:02:30 | INFO     | CASO 3 — Servicio válido
+2026-05-11 20:02:30 | INFO     | ───────────────────────────────────────────────────────
+2026-05-11 20:02:30 | INFO     | Servicio válido procesado.
+2026-05-11 20:02:30 | INFO     | ───────────────────────────────────────────────────────
+2026-05-11 20:02:30 | INFO     | CASO 4 — Servicio inválido
+2026-05-11 20:02:30 | INFO     | ───────────────────────────────────────────────────────
+2026-05-11 20:02:30 | WARNING  | Servicio inválido detectado: El nombre del servicio no puede estar vacío.
+2026-05-11 20:02:30 | INFO     | ───────────────────────────────────────────────────────
+2026-05-11 20:02:30 | INFO     | CASO 5 — Reserva válida
+2026-05-11 20:02:30 | INFO     | ───────────────────────────────────────────────────────
+2026-05-11 20:02:30 | INFO     | Cliente registrado | ID: CLI100 | Nombre: Carlos Pérez
+2026-05-11 20:02:30 | INFO     | Reserva creada correctamente | ID: RES-1
+2026-05-11 20:02:30 | INFO     | Reserva confirmada | ID: RES-1
+2026-05-11 20:02:30 | INFO     | Proceso de confirmación ejecutado.
+2026-05-11 20:02:30 | INFO     | Reserva finalizada | ID: RES-1
+2026-05-11 20:02:30 | INFO     | Proceso de finalización ejecutado.
+2026-05-11 20:02:30 | INFO     | Reserva válida procesada.
+2026-05-11 20:02:30 | INFO     | ───────────────────────────────────────────────────────
+2026-05-11 20:02:30 | INFO     | CASO 6 — Reserva inválida
+2026-05-11 20:02:30 | INFO     | ───────────────────────────────────────────────────────
+2026-05-11 20:02:30 | ERROR    | Error al crear reserva: El objeto cliente no es válido.
+2026-05-11 20:02:30 | WARNING  | Reserva inválida detectada: No fue posible crear la reserva.

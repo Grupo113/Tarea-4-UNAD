@@ -1,38 +1,42 @@
+# main.py
+
 """
-main.py
+=====================================================
+SISTEMA SOFTWARE FJ
+=====================================================
 
-Archivo principal del sistema Software FJ.
+Sistema orientado a objetos para gestión de:
 
-Este módulo se encarga de:
-
-- Integrar todos los componentes del sistema
-- Ejecutar pruebas funcionales
-- Simular operaciones reales
-- Manejar excepciones globales
-- Registrar eventos y errores
-- Garantizar estabilidad del sistema
+✔ Clientes
+✔ Servicios
+✔ Reservas
 
 El sistema implementa:
-- Programación Orientada a Objetos
-- Manejo avanzado de excepciones
+
+- Abstracción
+- Herencia
 - Polimorfismo
 - Encapsulación
-- Herencia
-- Abstracción
+- Manejo avanzado de excepciones
 
-NO se utilizan bases de datos.
-Toda la información se maneja mediante:
-- Objetos
-- Listas
-- Archivos de logs
+Características principales:
+
+✔ Sin base de datos
+✔ Manejo mediante objetos y listas
+✔ Registro de eventos y errores
+✔ Validaciones robustas
+✔ Continuidad del sistema ante fallos
+
+El sistema simula más de 10 operaciones,
+incluyendo casos válidos e inválidos.
 """
 
 # =====================================================
 # IMPORTACIONES
 # =====================================================
 
-import os
 import logging
+import os
 
 from models.cliente import Cliente
 
@@ -51,20 +55,8 @@ from exceptions.custom_exceptions import (
 )
 
 # =====================================================
-# CONFIGURACIÓN DEL SISTEMA DE LOGS
+# CONFIGURACIÓN DE LOGS
 # =====================================================
-
-"""
-El sistema registra todos los eventos y errores
-en el archivo:
-
-data/logs.txt
-
-Esto permite:
-- auditoría
-- seguimiento de errores
-- trazabilidad del sistema
-"""
 
 # Crear carpeta data automáticamente
 os.makedirs("data", exist_ok=True)
@@ -76,31 +68,30 @@ logging.basicConfig(
     encoding="utf-8"
 )
 
-# Logger principal
 logger = logging.getLogger("software_fj")
 
 # =====================================================
-# FUNCIÓN PRINCIPAL DEL SISTEMA
+# FUNCIÓN PRINCIPAL
 # =====================================================
 
 def main():
     """
     Función principal del sistema.
 
-    Aquí se ejecutan:
-    - Creación de clientes
-    - Creación de servicios
-    - Creación de reservas
-    - Validaciones
-    - Manejo de errores
+    Aquí se realizan múltiples operaciones:
 
-    El sistema debe continuar funcionando
-    aun cuando existan errores.
+    ✔ Clientes válidos e inválidos
+    ✔ Servicios válidos e inválidos
+    ✔ Reservas exitosas y fallidas
+    ✔ Confirmaciones
+    ✔ Cancelaciones
+    ✔ Finalizaciones
+    ✔ Manejo robusto de errores
     """
 
-    print("\n====================================")
-    print("     SISTEMA SOFTWARE FJ")
-    print("====================================\n")
+    print("\n====================================================")
+    print("              SISTEMA SOFTWARE FJ")
+    print("====================================================")
 
     logger.info("Sistema iniciado correctamente.")
 
@@ -120,9 +111,12 @@ def main():
     reservas = []
 
     # =================================================
-    # OPERACIÓN 1
-    # CREAR CLIENTE VÁLIDO
+    # OPERACIÓN 1 — CLIENTE VÁLIDO
     # =================================================
+
+    print("\n====================================================")
+    print("OPERACIÓN 1 — CLIENTE VÁLIDO")
+    print("====================================================")
 
     try:
 
@@ -138,7 +132,7 @@ def main():
         print("✔ Cliente válido registrado.")
 
         logger.info(
-            "Cliente registrado correctamente."
+            "Cliente válido registrado."
         )
 
     except ClienteError as error:
@@ -148,9 +142,12 @@ def main():
         logger.error(error)
 
     # =================================================
-    # OPERACIÓN 2
-    # CREAR CLIENTE INVÁLIDO
+    # OPERACIÓN 2 — CLIENTE INVÁLIDO
     # =================================================
+
+    print("\n====================================================")
+    print("OPERACIÓN 2 — CLIENTE INVÁLIDO")
+    print("====================================================")
 
     try:
 
@@ -166,16 +163,18 @@ def main():
     except ClienteError as error:
 
         print(
-            f"✔ Error controlado "
-            f"en cliente inválido: {error}"
+            f"✔ Error controlado: {error}"
         )
 
         logger.error(error)
 
     # =================================================
-    # OPERACIÓN 3
-    # CREAR SERVICIO SALA
+    # OPERACIÓN 3 — SERVICIO SALA VÁLIDO
     # =================================================
+
+    print("\n====================================================")
+    print("OPERACIÓN 3 — SERVICIO SALA VÁLIDO")
+    print("====================================================")
 
     try:
 
@@ -195,14 +194,17 @@ def main():
 
     except ServicioError as error:
 
-        print(f"✘ Error servicio sala: {error}")
+        print(f"✘ Error servicio: {error}")
 
         logger.error(error)
 
     # =================================================
-    # OPERACIÓN 4
-    # CREAR SERVICIO EQUIPO
+    # OPERACIÓN 4 — SERVICIO EQUIPO VÁLIDO
     # =================================================
+
+    print("\n====================================================")
+    print("OPERACIÓN 4 — SERVICIO EQUIPO VÁLIDO")
+    print("====================================================")
 
     try:
 
@@ -222,14 +224,17 @@ def main():
 
     except ServicioError as error:
 
-        print(f"✘ Error servicio equipo: {error}")
+        print(f"✘ Error servicio: {error}")
 
         logger.error(error)
 
     # =================================================
-    # OPERACIÓN 5
-    # CREAR SERVICIO ASESORÍA
+    # OPERACIÓN 5 — SERVICIO ASESORÍA VÁLIDO
     # =================================================
+
+    print("\n====================================================")
+    print("OPERACIÓN 5 — SERVICIO ASESORÍA VÁLIDO")
+    print("====================================================")
 
     try:
 
@@ -244,19 +249,22 @@ def main():
         print("✔ Servicio asesoría registrado.")
 
         logger.info(
-            "Servicio asesoría registrado."
+            "Servicio asesoría registrada."
         )
 
     except ServicioError as error:
 
-        print(f"✘ Error servicio asesoría: {error}")
+        print(f"✘ Error servicio: {error}")
 
         logger.error(error)
 
     # =================================================
-    # OPERACIÓN 6
-    # CREAR SERVICIO INVÁLIDO
+    # OPERACIÓN 6 — SERVICIO INVÁLIDO
     # =================================================
+
+    print("\n====================================================")
+    print("OPERACIÓN 6 — SERVICIO INVÁLIDO")
+    print("====================================================")
 
     try:
 
@@ -271,16 +279,18 @@ def main():
     except ServicioError as error:
 
         print(
-            f"✔ Error controlado "
-            f"en servicio inválido: {error}"
+            f"✔ Error controlado: {error}"
         )
 
         logger.error(error)
 
     # =================================================
-    # OPERACIÓN 7
-    # CREAR RESERVA VÁLIDA
+    # OPERACIÓN 7 — RESERVA VÁLIDA
     # =================================================
+
+    print("\n====================================================")
+    print("OPERACIÓN 7 — RESERVA VÁLIDA")
+    print("====================================================")
 
     try:
 
@@ -292,10 +302,8 @@ def main():
 
         reservas.append(reserva1)
 
-        # Confirmar reserva
         reserva1.confirmar()
 
-        # Calcular total
         total = reserva1.calcular_total()
 
         print(
@@ -314,9 +322,12 @@ def main():
         logger.error(error)
 
     # =================================================
-    # OPERACIÓN 8
-    # RESERVA CON DESCUENTO
+    # OPERACIÓN 8 — RESERVA CON DESCUENTO
     # =================================================
+
+    print("\n====================================================")
+    print("OPERACIÓN 8 — RESERVA CON DESCUENTO")
+    print("====================================================")
 
     try:
 
@@ -333,7 +344,7 @@ def main():
         total = reserva2.calcular_total(0.10)
 
         print(
-            f"✔ Reserva con descuento procesada. "
+            f"✔ Reserva con descuento. "
             f"Total: ${total}"
         )
 
@@ -348,9 +359,12 @@ def main():
         logger.error(error)
 
     # =================================================
-    # OPERACIÓN 9
-    # RESERVA INVÁLIDA
+    # OPERACIÓN 9 — RESERVA INVÁLIDA
     # =================================================
+
+    print("\n====================================================")
+    print("OPERACIÓN 9 — RESERVA INVÁLIDA")
+    print("====================================================")
 
     try:
 
@@ -365,22 +379,26 @@ def main():
     except ReservaError as error:
 
         print(
-            f"✔ Error controlado "
-            f"en reserva inválida: {error}"
+            f"✔ Error controlado: {error}"
         )
 
         logger.error(error)
 
     # =================================================
-    # OPERACIÓN 10
-    # FINALIZAR RESERVA
+    # OPERACIÓN 10 — FINALIZAR RESERVA
     # =================================================
+
+    print("\n====================================================")
+    print("OPERACIÓN 10 — FINALIZAR RESERVA")
+    print("====================================================")
 
     try:
 
         reserva1.finalizar()
 
-        print("✔ Reserva finalizada correctamente.")
+        print(
+            "✔ Reserva finalizada correctamente."
+        )
 
         logger.info(
             "Reserva finalizada."
@@ -395,42 +413,61 @@ def main():
         logger.error(error)
 
     # =================================================
-    # EJEMPLO AVANZADO
-    # try / except / else / finally
+    # OPERACIÓN 11 — CANCELAR RESERVA
     # =================================================
 
-    """
-    La guía solicita demostrar:
-
-    - try
-    - except
-    - else
-    - finally
-
-    Aquí se implementa un ejemplo completo.
-    """
+    print("\n====================================================")
+    print("OPERACIÓN 11 — CANCELAR RESERVA")
+    print("====================================================")
 
     try:
 
-        print("\nProcesando operación avanzada...")
+        reserva2.cancelar()
+
+        print(
+            "✔ Reserva cancelada correctamente."
+        )
+
+        logger.info(
+            "Reserva cancelada."
+        )
+
+    except ReservaError as error:
+
+        print(
+            f"✘ Error cancelando reserva: {error}"
+        )
+
+        logger.error(error)
+
+    # =================================================
+    # OPERACIÓN 12 — TRY / EXCEPT / ELSE / FINALLY
+    # =================================================
+
+    print("\n====================================================")
+    print("OPERACIÓN 12 — MANEJO AVANZADO DE EXCEPCIONES")
+    print("====================================================")
+
+    try:
 
         resultado = 10 / 2
 
     except ZeroDivisionError as error:
 
-        print(f"Error matemático: {error}")
+        print(
+            f"✘ Error matemático: {error}"
+        )
 
         logger.error(error)
 
     else:
 
         print(
-            "✔ Operación matemática ejecutada "
-            "correctamente."
+            "✔ Operación matemática exitosa."
         )
 
         logger.info(
-            "Operación matemática exitosa."
+            "Operación matemática ejecutada."
         )
 
     finally:
@@ -447,9 +484,9 @@ def main():
     # RESUMEN FINAL
     # =================================================
 
-    print("\n====================================")
-    print("      RESUMEN DEL SISTEMA")
-    print("====================================\n")
+    print("\n====================================================")
+    print("                 RESUMEN FINAL")
+    print("====================================================")
 
     print(f"Clientes registrados: {len(clientes)}")
     print(f"Servicios registrados: {len(servicios)}")
@@ -462,16 +499,11 @@ def main():
     print("\n✔ Sistema ejecutado correctamente.")
     print("✔ Logs registrados en data/logs.txt")
 
-    print("\n====================================")
+    print("\n====================================================")
 
 # =====================================================
 # EJECUCIÓN PRINCIPAL
 # =====================================================
-
-"""
-Este bloque garantiza que el sistema
-solo se ejecute directamente desde main.py
-"""
 
 if __name__ == "__main__":
 
